@@ -11,10 +11,6 @@ export const Home = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    console.log(movies);
-  }, [movies]);
-
-  useEffect(() => {
     setStatus('pending');
     try {
       const fetchData = async () => {
